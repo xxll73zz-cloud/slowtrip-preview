@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0e5">
+  <title>阿勒泰四天三晚 · 慢选</title>
+  <link rel="icon" href="./icon.svg?v=7" type="image/svg+xml">
+  <link rel="stylesheet" href="./altay.css?v=2">
+  <script type="module" src="./altay.js"></script>
+</head>
+<body>
+  <main class="trip">
+    <header class="trip-hero">
+      <a class="home" href="./">‹ 慢选</a>
+      <p class="eyebrow">2026年12月 · 阿勒泰市进出</p>
+      <h1>阿勒泰，去看雪</h1>
+      <p>四天三晚。住在雪山脚下或市区，白天看雪，晚上吃点辣的。</p>
+      <ul class="tags" aria-label="你的偏好">
+        <li>住宿约 ¥300 / 间夜</li><li>5 公里生活圈</li><li>喜欢吃辣</li><li>优先雪景和小木屋</li>
+      </ul>
+      <div class="hard-filter"><strong>住宿硬条件</strong><p>卫生间必须干净。站在房门口或坐在床上，都不能透过玻璃看到马桶或淋浴区。按实际房型核验。</p></div>
+      <div class="actions"><button id="start" type="button">开始计时模拟</button><a href="#route">直接看路线</a></div>
+      <p id="progress" role="status" class="muted">预览已按你的偏好选出一套路线。也可以亲自走一遍三步决策。</p>
+    </header>
+
+    <section class="glass stage" id="hotel" aria-labelledby="hotel-title">
+      <p class="eyebrow">01 · 住宿</p>
+      <h2 id="hotel-title" tabindex="-1">先找值得核验的房型</h2>
+      <div class="options">
+        <article>
+          <span class="badge">优先核验</span>
+          <h3>阿勒泰阿禾民宿</h3>
+          <p>将军山国际滑雪场店。房源有雪景相关住客反馈，平台总评 4.9，清洁、服务和环境分项也为 4.9。是否有独立木屋、指定房型的卫生间和 12 月房价都待确认。</p>
+          <p>酒店页标注雪场约 780 米，街心公园约 1.8 公里，解放路百货大楼约 2.3 公里，五百里风情街约 3 公里。具体路程以导航为准。</p>
+          <a class="source" href="https://hotels.ctrip.com/hotels/125760161.html">房型与周边</a>
+          <a class="source" href="https://tw.trip.com/hotels/aletaishi-hotel-detail-125760161/altay-ahe-homestay/">住客点评</a>
+          <a class="source" href="https://uri.amap.com/search?keyword=阿勒泰阿禾民宿&amp;city=阿勒泰市&amp;view=map">高德地图</a>
+          <button class="pick" type="button" data-choice="阿禾民宿 · 待核验" hidden>先核验阿禾</button>
+        </article>
+        <article>
+          <span class="badge">市区备选</span>
+          <h3>全季酒店（阿勒泰百货大楼店）</h3>
+          <p>适合把购物、吃饭和补给放在市区，去将军山看雪。优先看准确日期的报价、具体房型和近期清洁反馈。房间雪景和卫生间隐私待核验。</p>
+          <a class="source" href="https://hotels.ctrip.com/hotels/124408018.html">房型与点评</a>
+          <button class="pick" type="button" data-choice="全季百货大楼店 · 待核验" hidden>先核验全季</button>
+        </article>
+      </div>
+      <p class="note"><strong>两家都待核验。</strong>查具体房型的近期卫生间点评，再确认实拍能看清马桶、淋浴区和门。阿禾曾有点评提到浴室门损坏，核验时也看门能否正常关严。</p>
+    </section>
+
+    <section class="glass stage" id="food" aria-labelledby="food-title">
+      <p class="eyebrow">02 · 吃饭</p>
+      <h2 id="food-title" tabindex="-1">主餐想吃哪种辣？</h2>
+      <div class="options">
+        <article>
+          <span class="badge">首选 · 香辣</span>
+          <h3>鲜宴新疆菜（阿勒泰雪都不夜城店）</h3>
+          <p>菜单有大盘鸡、香辣乳鸽捞面。逛完将军山，想吃一顿热乎的香辣新疆菜就选它。位置在红墩路雪都不夜城，去前看当日营业和车程。</p>
+          <a class="source" href="https://hk.trip.com/restaurant/china/altay-city/detail/rest-148931002/">门店信息</a>
+          <a class="source" href="https://you.ctrip.com/yougourmet/restdetail/altaycity2482/148931002.html">菜品</a>
+          <button class="pick" type="button" data-choice="鲜宴新疆菜 · 大盘鸡或香辣捞面" hidden>选香辣大盘鸡</button>
+        </article>
+        <article>
+          <span class="badge">备选 · 椒麻</span>
+          <h3>乡村馕坑肉旗舰店（团结路店）</h3>
+          <p>菜单有小份椒麻鸡和馕坑肉。想吃椒麻口味，或当天已经在市区活动时选它。去前看当日营业和排队。</p>
+          <a class="source" href="https://gs.ctrip.com/html5/you/foods/fooddetail/427/24299708.html">门店和菜品</a>
+          <button class="pick" type="button" data-choice="乡村馕坑肉 · 小份椒麻鸡" hidden>选椒麻鸡</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="glass stage" id="options" aria-labelledby="options-title">
+      <p class="eyebrow">03 · 路线</p>
+      <h2 id="options-title" tabindex="-1">三晚住同一家，还是去禾木住木屋？</h2>
+      <div class="options">
+        <article>
+          <span class="badge">首选 · 市区连住</span>
+          <h3>将军山 ＋ 桦林公园</h3>
+          <p>雪场和林间雪景各留半天到一天，三晚住同一家，吃饭和补给都在阿勒泰市。雪场有缆车等设施，12 月当天的开放情况需确认。</p>
+          <a class="source" href="https://wlt.xinjiang.gov.cn/wlt/5sjhxc/202104/af85431243384a7ca7f245fce718bda4.shtml">将军山</a>
+          <a class="source" href="https://alt-szb.xjmty.com/html/2026-01/23/content_418_314973.htm">桦林公园往年冬景</a>
+          <button class="pick" type="button" data-choice="市区三晚 · 将军山＋桦林公园" hidden>选市区连住</button>
+        </article>
+        <article>
+          <span class="badge">室内备选</span>
+          <h3>将军山 ＋ 市区室内活动</h3>
+          <p>保留将军山，把桦林公园改成博物馆或商圈。下雪太大、想少走路时更合适。博物馆当天闭馆可改逛街补给。</p>
+          <a class="source" href="https://you.ctrip.com/sight/altaycity2482/5704298.html">博物馆信息</a>
+          <button class="pick" type="button" data-choice="市区三晚 · 将军山＋室内备选" hidden>选室内备选</button>
+        </article>
+      </div>
+      <p class="note"><strong>本次跳过禾木木屋。</strong>更贴近雪村木屋体验，但要额外安排冬季转运，12 月约 ¥300 的合适房型、卫生间和 5 公里生活配套都待核验。<a class="source" href="https://www.xjbt.gov.cn/c/2025-09-16/8443122.shtml">阿禾公路资料</a></p>
+    </section>
+
+    <section class="glass" id="route" aria-labelledby="route-title">
+      <p class="eyebrow">阿勒泰市 · 四天三晚</p>
+      <h2 id="route-title" tabindex="-1">你的看雪路线</h2>
+      <p class="note">住宿先看 <strong id="hotel-result">阿禾民宿 · 待核验</strong>。按每间每晚约 ¥300，三晚住宿目标约 ¥900。确切日期、价格、房源和卫生间条件仍待核验。</p>
+      <ol class="timeline">
+        <li><h3>第 1 天 · 到市区，轻松入住</h3><p>抵达 → 入住 → 解放路百货商圈补给。晚餐找一碗加辣的过油肉拌面，早点回酒店休息。</p></li>
+        <li><h3>第 2 天 · 将军山看雪</h3><p>酒店 → 将军山国际滑雪度假区 → 市区晚餐。以看雪、拍照为主，按当日开放情况考虑观光缆车。晚餐选 <strong id="food-result">鲜宴新疆菜 · 大盘鸡或香辣捞面</strong>。</p></li>
+        <li><h3>第 3 天 · <span id="day-three-title">雪中桦林</span></h3><p id="day-three">酒店 → 桦林公园开放步道 → 五百里风情街。天气不适合步行就改阿勒泰博物馆，出发前确认开放。</p></li>
+        <li><h3>第 4 天 · 退房返程</h3><p>退房 → 时间充裕就在解放路吃午饭 → 按返程时间去机场或车站。</p></li>
+      </ol>
+      <a class="source" href="https://uri.amap.com/search?keyword=将军山国际滑雪度假区&amp;city=阿勒泰市&amp;view=map">地图 · 将军山</a>
+      <a class="source" href="https://uri.amap.com/search?keyword=桦林公园&amp;city=阿勒泰市&amp;view=map">地图 · 桦林公园</a>
+    </section>
+
+    <section class="glass" id="timing" aria-labelledby="timing-title">
+      <p class="eyebrow">模拟报告</p>
+      <h2 id="timing-title">决策用时</h2>
+      <p class="muted">从已经有候选的页面开始，到选出酒店核验顺序、主餐和路线。每个阶段显示一组对比。</p>
+      <dl class="times">
+        <div><dt>酒店</dt><dd data-duration="hotel">估算 2–3 分钟</dd></div>
+        <div><dt>餐厅</dt><dd data-duration="food">估算 1–2 分钟</dd></div>
+        <div><dt>路线</dt><dd data-duration="options">估算 2–3 分钟</dd></div>
+        <div><dt>合计</dt><dd id="total">估算 5–8 分钟</dd></div>
+      </dl>
+      <p class="muted"><strong>手机尺寸演示</strong> · 住宿 1.0 秒、餐厅 1.0 秒、路线 1.0 秒，合计 3.0 秒。这次用已选好的答案连续点选，用来验证计时和路线更新。</p>
+      <p class="note">以上估算用于阅读、比较和选择已整理的候选。开始模拟后会显示这次操作的分段实测。查实际房价、核验卫生间、等酒店回复和预订另计。卫生间核验结束前，住宿只能进入待核验名单。</p>
+    </section>
+  </main>
+</body>
+</html>
